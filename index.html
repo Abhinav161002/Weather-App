@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>India Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>India Weather Forecast</h1>
+    <div class="search-box">
+      <input type="text" id="cityInput" list="cityList" placeholder="Enter Indian city..." />
+      <datalist id="cityList"></datalist>
+      <button onclick="getWeather()">Search</button>
+    </div>
+    <div id="weatherInfo" class="weather-card hidden">
+      <h2 id="cityName"></h2>
+      <img id="weatherIcon" alt="Weather Icon" />
+      <p id="description"></p>
+      <p><strong>Temperature:</strong> <span id="temp"></span>°C</p>
+      <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+      <p><strong>Wind:</strong> <span id="wind"></span> km/h</p>
+    </div>
+    <div id="error" class="error-message hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
